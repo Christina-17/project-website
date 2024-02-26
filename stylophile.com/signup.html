@@ -2,165 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <title>Signup page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<style>
-    /*.div{
-        border-width: 2px;
-        border-color: gray;
-        border-style: solid;
-        height: 50%;
-        width: 90%;
-        background-color: aqua;
-    } */
-    form{
-        border-width: 2px;
-        border-color: gray;
-        border-style: solid;
-        height: 600px;
-        width: 30%;
-        text-align: left;
-        margin-left: 520px;
-    }
-    h1{
-        text-align: center;
-    }
-    h4{
-        text-align: left;
-        margin-left: 30px;
-        font-size:larger;
+<body>
+
+    <style>
+        .header{
+            text-align: center;
+            font-size: 3vh;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 4vh;
+
+        }
+
+        form{
+           background-color:white;
+           border:2px solid gray;
+           width: 45vh;
+           padding: 3vh;
+           
+        }
+        .form-div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+           margin-top: 5vh;
+           
+        }
+        .password p,.form-con p,.mobile p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+        font-weight: bolder;
+
+        }
+        .form-con h3{
+            font-size:larger;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font: bolder;
         font-weight:470;
-    
-    }
-    h2{
-        text-align: left;
-        margin-left: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: smaller;
-        font-weight: bolder;
-    }
-     input,select,.input2{
-       
-        border-radius: 3px;
+        }
+
+        input{
+            border-radius: 0.5vh;
         border-color:gray;
-        margin-left: 30px;
-        border-style: solid;
-        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.15) ;
-        padding-top: 6px;
-        padding-bottom:6px ;
-        padding-left: 1px;
-    }
-
-
-    input{
-        padding-left:110px ;
-        padding-right:110px ;
-    }
-    .para1{
-        margin-left: 30px;
-        text-align: justify;
-        width: 330px;
-    }
-    button{
         
-        padding-left:130px ;
-        padding-right:130px ;
-        margin-left: 28px;
-        padding-top:7px ;
-        padding-bottom:7px ;
-        border-radius: 2px;
-        border-color: rgb(255, 213, 0);
-        background-color: rgb(255, 213, 0);
         border-style: solid;
-        border-radius: 5px;
-        box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
-        margin-bottom: 30px;
-        margin-top: 20px;
-
-    }
-
-    .para2{
-       /* border-top-color: gray;
-        border-top-width:2px ;
-        border-top-style: solid; */
-       padding-top: 10px;
-       margin-right: 10px;
-       box-shadow: inset 0px 2px rgba(0, 0, 0, 0.15) ;
-        
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);
+        padding:1vh;
        
-    }
-    .para2{
-        margin-left: 30px;
+        }
+        .form-con input, .password input{
+               
+        padding-right: 18vh;
+
+        }
+        .mobile input{
+            padding-right: 6vh
+        }
+  .verifynum button{
+    border-radius: 0.5vh;
+        border-color:rgba(255, 213, 0);
         
-    }
-    .change{
-        color: rgba(0, 119, 255, 0.658);
-    }
-    .change:hover{
-        text-decoration: underline;
-    }
-    .end{
-        text-align: left;
-        margin-left: 25px;
-    }
-    .footer{
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif ;
-        font-size: small;
-        font-weight: bolder;
-        font-style: italic;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-   
+        border-style: solid;
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);
+        padding:1vh;
+        padding-right: 15vh;
+        padding-left:14vh ;
+        background-color: rgba(255, 213, 0)
+
+  }
+        
+  .select-input{
+    display: flex;
+    gap: 2vh;
+  }
+  .footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+    </style>
+
+
+
+<div class="cointainer">
+
+<div class="header">
+            STYLOPHILE
+</div>
+<div class="form-div">
+<form>
+
+<div class="form-con">
+
+            <h3>create Account</p>
+            <p>Your name</p>
+            <input type="text" placeholder="First and last name">
+</div>
+
+    <div class="mobile">
+        
+                <p>Moblie</p>
+                <div class="select-input">
+                <select>
+                <option value="ind">IND +91</option>
+                <option value="ind">IND +91</option>
+                <option value="ind">IND +91</option>
+                <option value="ind">IND +91</option>
+                <option value="ind">IND +91</option>
+                <option value="ind">IND +91</option>
+                    
+                </select>
+                <input type="number" placeholder="Moblie number"></div>
+                </div>
+
+               
+   <div class="password">
+                <P >password</P>
+                <input type="password" placeholder="atleast sicx character">
+   </div>
+
+                
+  <div class="verifynum">
+                <p>To verify your number ,We will send you a text message with a temporary code.</p>
+                <button>Verify number</button>
+  </div>
+
+<div>
+                <p> Already have an account? <a href="signin.html" target="_blank"> Sign in</a></p>
+      
+                <p> By creating an account or logging in, you agree to Stylophil's <span>Conditions of Use</span>Conditions of Use and <span>Privacy Policy</span> Privacy Policy</p>
+                <p class="footer"> © 1996-2024, Stelophile.com, Inc. or its affiliates</p>
+</div>
+
+</form></div>
+</div>
+
+
 
     
-</style>
-<body>
-    <div>
-    <h1>STYLOPHILE</h1>
-  <form>
-   
-     <H4>Create Account</H4>
-     <h2>Your Name</h2>
-     <input type="text" placeholder="First and last name" required>
-     <h2>Mobile Number</h2>
-     <select>
-        <option value="AFG+93">AFG +211</option>
-        <option value="ALB +355">ALB +911</option>
-        <option value="ALG +213">ALG +31</option>
-        <option value="AMS +1">AMS +533</option>
-        <option value="IND +91">IND +91</option>
 
-     </select>
-     <input class="input2" type="number" placeholder="Mobile Number" required>
-     <h2>Password</h2>
-     <input  type="password" placeholder="Atleast six characters" required>
-     <p class="para1">To verify your number ,We will send you a text message with a temporary code. </p>
-     <button ><a href="thankyou.html">Verify My Number</a></button>
-     
-     
-     <p class="para2">
-        Already have an account? <a href="signin.html" target="_blank"> Sign in</a>
-     </p>
-     <p class="end">
-        By creating an account or logging in, you agree to Stylophil's <span class=change>Conditions of Use</span> and <span class=change>Privacy Policy</span>
-    </p>
-    <p>
 
-    </p>
-    <p class="footer">
-        © 1996-2024, Stelophile.com, Inc. or its affiliates
-    </p>
-    
-  </form>
 
-    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
     
 </body>
 </html>
