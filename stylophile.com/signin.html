@@ -3,112 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in page</title>
+    <title>signin</title>
 </head>
-<style>
-    form{
-        border-width: 2px;
-        border-color: gray;
-        border-style: solid;
-        height: 400px;
-        width: 30%;
-        text-align: left;
-        margin-left: 520px;
-    }
-    h1{
-        text-align: center;
-    }
-    h4{
-        text-align: left;
-        margin-left: 30px;
-        font-size:larger;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font: bolder;
-        font-weight:470;
-    
-    }
-    h2{
-        text-align: left;
-        margin-left: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+<body>
+    <style>
+         .header{
+            text-align: center;
+            font-size: 3vh;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 4vh;
+            font-weight:600;
+            padding-top: 2vh;
+
+        }
+        .form-div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+           margin-top: 3vh;  
+         
+        }
+.form-con p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: smaller;
         font-weight: bolder;
-    }
-    .change{
-        color: rgba(0, 119, 255, 0.658);
-        
-    }
-    .change:hover{
-        text-decoration: underline;
-    }
-    .end{
-        text-align: left;
-        margin-left: 25px;
-    }
-    .footer{
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif ;
-        font-size: small;
-        font-weight: bolder;
-        font-style: italic;
-    }
-    button{
-        
-        padding-left:130px ;
-        padding-right:130px ;
-        margin-left: 28px;
-        padding-top:7px ;
-        padding-bottom:7px ;
-        border-radius: 2px;
-        border-color: rgb(255, 213, 0);
-        background-color: rgb(255, 213, 0);
-        border-style: solid;
-        border-radius: 5px;
-        box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
-        margin-bottom: 30px;
-        margin-top: 20px;
+}
 
-    }
-    .btn{
-        border-radius: 3px;
+.form-con{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+input, button{
+            border-radius: 0.5vh;
         border-color:gray;
-        margin-left: 30px;
+        
         border-style: solid;
-        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.15) ;
-        padding-top: 6px;
-        padding-bottom:6px ;
-        padding-left: 1px;
-        padding-right:160px ;
-        text-align: center;
-      
-    }
-    .link{
-        text-align: center;
-        text-decoration: none;
-    }
-    .text{
-        text-decoration: none;
-        color: black;
-    }
-</style>
-<body>
-    <h1>STYLOPHILE</h1>
-     <form>
-    
-    <H4>SIGN IN</H4>
-    <h2>EMAIL OR MOBILE NUMBER</h2>
-    <input  class="btn" type="email" placeholder="Enter Your Email" required>
-    <button><a class="text" href="thankyou.html">CONTINUE</a> </button>
-    <p class="end">
-        By creating an account or logging in, you agree to Stylophil's <span class=change>Conditions of Use</span> and <span class=change>Privacy Policy</span>
-    </p>
-    <p class="link">
-     Already have an account?<a  href= "signup.html"><span class="change">Sign up</span></a>
-    </p>
-    <p class="footer">
-        © 1996-2024, Stelophile.com, Inc. or its affiliates
-    </p>
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);
+        padding:1.5vh;}
 
+        form{
+           background-color:white;
+           border:2px solid gray;
+           width: 45vh;
+           padding: 3vh;}
+           button{
+            background-color: rgba(255, 213, 0);
+            border-radius: 0.5vh;
+        border-color:rgba(255, 213, 0);
+        
+        border-style: solid;
+           }
+           span{
+            color: rgba(0, 119, 255, 0.658);
+           }
+       
+    </style>
+        <div class="cointainer">
+
+            <div class="header">
+                        STYLOPHILE
+            </div>
+
+            <div class="form-div">
+<form>
+
+    <div class="form-con">
+
+        <h3>Create Account</h3>
+        <p>Email or Mobile Number</p>
+        <input type="text" placeholder="First and last name">
+        <button>CONTINUE</button>
+    </div>
+
+    <div class="footer">
+    <p>By creating an account or logging in, you agree to Stylophil's <span>Conditions of Use</span> and <span>Privacy Policy</span></p>
+    <p> Already have an account? <a href="signin.html" target="_blank"> Sign in</a></p>
+    <p class="footer"> © 1996-2024, Stelophile.com, Inc. or its affiliates</p>
+    </div>
 </form>
+            </div>
+        </div>
+
+
 </body>
 </html>
